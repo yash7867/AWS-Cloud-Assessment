@@ -1,0 +1,4 @@
+I designed a VPC with CIDR 10.0.0.0/16 to provide 65,536 IP addresses for scalability. 
+Public subnets (10.0.1.0/24, 10.0.2.0/24) in two AZs enable high availability for load balancers. 
+Private subnets (10.0.10.0/24, 10.0.11.0/24) host backend instances isolated from direct internet access. 
+The NAT Gateway in public subnet 1 allows private instances outbound internet access for updates while maintaining security.
